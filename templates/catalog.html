@@ -1,0 +1,13 @@
+{% extends 'header.html' %}
+{% block content %}
+
+<div class="cars_conteiner">
+ {% for car in cars %}
+    <div class="car_card">
+        <div class="car_name">{{car.name}}</div>
+        <div class="car_description">{{ car.description }}</div>
+        <div class="car_img">{{ car.main_photo }}</div>
+    </div>
+    </div>
+{% endfor %}
+{% endblock %}
